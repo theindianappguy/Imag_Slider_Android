@@ -1,0 +1,101 @@
+package com.theindianappguy.dot7.Pages.JoinDot7;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.View;
+import android.widget.CheckBox;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
+import com.theindianappguy.dot7.CustomClasses.Upload;
+import com.theindianappguy.dot7.HelpingClass.Functions;
+import com.theindianappguy.dot7.HelpingClass.SessionManagement;
+import com.theindianappguy.dot7.MainActivity.MainActivityAgents;
+import com.theindianappguy.dot7.Pages.PayActivity;
+import com.theindianappguy.dot7.R;
+
+public class RegisterActivityAgents2 extends AppCompatActivity {
+
+    private static final int PROOF_IMAGE_REQUEST = 1000;
+    private static final int SELFIE_IMAGE_REQUEST = 999;
+    /*UI Elements*/
+    private LinearLayout registerBtn, proof_loading, selfie_loading;
+    ProgressBar proofProgressBar, selfieProgressBar;
+    private ImageView selfieImgView, proofImgView;
+    private CheckBox automobile, technician, health, properties, toursandtravels, education, shopping;
+
+    /*Variables*/
+    private Uri proofImageUri, selfieImageUri;
+    private boolean proofUploaded = false, selfieUploaded = false;
+    String nameSt, emailSt, pincodeSt = "", areaSt = "";
+
+    /*User SessionMproof_loadinganagement*/
+    private SessionManagement cookies;
+
+    private TextView choose_proofImg, choose_selfieImg, upload_proofImg, upload_selfieImg, uploadingProofImgProgressBar,
+            uploadingSelfieImgProgressBar, proofImgUploadedTv, selfieImgUploadedTv;
+    //for images
+    private DatabaseReference mDatabaseRef;
+    private StorageReference mStorageRef;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_register_agents2);
+
+        //getting the toolbar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setting the title
+        toolbar.setTitle("Register");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
+        //placing toolbar in place of actionbar
+        setSupportActionBar(toolbar);
+
+        nameSt = getIntent().getStringExtra("name");
+        emailSt = getIntent().getStringExtra("email");
+        pincodeSt = getIntent().getStringExtra("pincode");
+        areaSt = getIntent().getStringExtra("area");
+
+        mDatabaseRef = FirebaseDatabase.getInstance().getReference().child(getResources().getString(R.string.userdb));
+        mStorageRef = FirebaseStorage.getInstance().getReference().child(getResources().getString(R.string.userdb));
+
+        proof_loading = findViewById(R.id.proof_loading);
+        proofProgressBar = findViewById(R.id.proofProgressBar);
+        selfie_loading = findViewById(R.id.selfie_loading);
+        selfieProgressBar = findViewById(R.id.selfieProgressBar);
+        proof_loading.setVisibility(View.GONE);
+        selfie_loading.setVisibility(View.GONE);
+        proofProgressBar.setVisibility(View.GONE);
+        selfieProgressBar.setVisibility(View.GONE);
+        registerBtn = findViewById(R.id.registerBtn);
+        choose_proofImg = findViewById(R.id.choose_proofImg);
+        choose_selfieImg = findViewById(R.id.choose_selfieImg);
+        upload_proofImg = findViewById(R.id.upload_proofImg);
+        upload_selfieImg = findViewById(R.id.upload_selfieImg);
+
+        proofImgUploadedTv = findViewById(R.id.proofImgUploadedTv);

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config>
+        <device id="pixel_2" />
+      </config>
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91983475-d47d-400b-af88-f7c871081e38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/CustomClasses/UpdatesClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/CustomClasses/UserClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/MainActivity/MainActivityAdmin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/MyOrdersActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/PayActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/WaitingScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/credit_card_black.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_content_copy_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_edit_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_settings_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_admin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_orders.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pay.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_waiting_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/HelpingClass/SessionManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/HelpingClass/SessionManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/MainActivity/MainActivityCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/MainActivity/MainActivityCustomer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/JoinDot7/RegisterActivityAgents.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/JoinDot7/RegisterActivityAgents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/JoinDot7/RegisterActivityAgents2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/JoinDot7/RegisterActivityAgents2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/PostAds/CarAdActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/PostAds/CarAdActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/PostAds/ChooseAdsCategorie.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/PostAds/ChooseAdsCategorie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/SettingsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/theindianappguy/dot7/Pages/SettingsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/circularsolid.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/circularsolid.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_auto_mobile_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_auto_mobile_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_categorie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_categorie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_categorie2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_choose_categorie2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_agents.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main_agents.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_ads.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_ads.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_notification.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_post_ads.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_post_ads.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/lay
